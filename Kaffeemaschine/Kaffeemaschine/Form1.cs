@@ -15,6 +15,12 @@ namespace Kaffeemaschine
         public Form1()
         {
             InitializeComponent();
+            lCredit.Text = "€2.00";
+        }
+
+        public void ProductIconClicked(object sender, EventArgs e)
+        {
+
         }
     }
 }

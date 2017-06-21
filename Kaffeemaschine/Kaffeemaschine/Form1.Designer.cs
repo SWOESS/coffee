@@ -46,7 +46,11 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lCredit = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -60,7 +64,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -103,7 +106,11 @@
             this.tableLayoutPanel1.Controls.Add(this.pictureBox11, 16, 14);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox12, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label3, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox13, 8, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 6, 7);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 11, 7);
+            this.tableLayoutPanel1.Controls.Add(this.label6, 16, 7);
+            this.tableLayoutPanel1.Controls.Add(this.label7, 1, 12);
+            this.tableLayoutPanel1.Controls.Add(this.lCredit, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -142,10 +149,11 @@
             this.tableLayoutPanel1.SetColumnSpan(this.label1, 20);
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.tableLayoutPanel1.SetRowSpan(this.label1, 2);
-            this.label1.Size = new System.Drawing.Size(797, 64);
+            this.label1.Size = new System.Drawing.Size(803, 64);
             this.label1.TabIndex = 0;
             this.label1.Text = "Münzverwaltung";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -207,12 +215,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.SetColumnSpan(this.pictureBox2, 3);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(243, 131);
             this.pictureBox2.Name = "pictureBox2";
             this.tableLayoutPanel1.SetRowSpan(this.pictureBox2, 3);
             this.pictureBox2.Size = new System.Drawing.Size(114, 90);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.ProductIconClicked);
             // 
             // pictureBox3
             // 
@@ -221,12 +232,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.SetColumnSpan(this.pictureBox3, 3);
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(443, 131);
             this.pictureBox3.Name = "pictureBox3";
             this.tableLayoutPanel1.SetRowSpan(this.pictureBox3, 3);
             this.pictureBox3.Size = new System.Drawing.Size(114, 90);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.ProductIconClicked);
             // 
             // pictureBox4
             // 
@@ -235,12 +249,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.SetColumnSpan(this.pictureBox4, 3);
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(643, 131);
             this.pictureBox4.Name = "pictureBox4";
             this.tableLayoutPanel1.SetRowSpan(this.pictureBox4, 3);
             this.pictureBox4.Size = new System.Drawing.Size(114, 90);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.ProductIconClicked);
             // 
             // pictureBox5
             // 
@@ -249,12 +266,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.SetColumnSpan(this.pictureBox5, 3);
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(43, 291);
             this.pictureBox5.Name = "pictureBox5";
             this.tableLayoutPanel1.SetRowSpan(this.pictureBox5, 3);
             this.pictureBox5.Size = new System.Drawing.Size(114, 90);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 7;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.ProductIconClicked);
             // 
             // pictureBox6
             // 
@@ -355,6 +375,7 @@
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 14;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.ProductIconClicked);
             // 
             // label3
             // 
@@ -371,22 +392,80 @@
             this.label3.Text = "Macchiato";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox13
+            // label4
             // 
-            this.pictureBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label4, 3);
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(243, 224);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(114, 19);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Grüntee";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label5, 3);
+            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label5.Location = new System.Drawing.Point(443, 224);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(114, 19);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Kakao";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label6, 3);
+            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.Location = new System.Drawing.Point(643, 224);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(114, 19);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Cappuchino";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.label7, 3);
+            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label7.Location = new System.Drawing.Point(43, 384);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 19);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Kaffee Schwarz";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lCredit
+            // 
+            this.lCredit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox13.BackColor = System.Drawing.Color.PaleGreen;
-            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox13, 4);
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(320, 64);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox13.Name = "pictureBox13";
-            this.tableLayoutPanel1.SetRowSpan(this.pictureBox13, 2);
-            this.pictureBox13.Size = new System.Drawing.Size(160, 64);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 16;
-            this.pictureBox13.TabStop = false;
+            this.lCredit.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.lCredit, 2);
+            this.lCredit.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lCredit.ForeColor = System.Drawing.Color.Gold;
+            this.lCredit.Location = new System.Drawing.Point(3, 64);
+            this.lCredit.Name = "lCredit";
+            this.lCredit.Size = new System.Drawing.Size(74, 32);
+            this.lCredit.TabIndex = 20;
+            this.lCredit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -394,6 +473,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(803, 643);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "Form1";
             this.Text = "Form1";
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -410,7 +490,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -434,7 +513,11 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lCredit;
     }
 }
 
