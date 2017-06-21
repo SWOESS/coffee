@@ -1,4 +1,6 @@
-﻿namespace ProduktverwaltungmitLog
+﻿using System;
+
+namespace ProduktverwaltungmitLog
 {
     public class Ingredient
     {
@@ -99,6 +101,15 @@
         public override string ToString()
         {
             return this.Name + ";" + this.Level + ";" + this.LvlMax + ";" + this.depleteunits + ";";
+        }
+    }
+    public class IngredientEmptyException : Exception
+    {
+        public Ingredient Ing { get; set; }
+
+        public IngredientEmptyException(Ingredient i)
+        {
+            this.Ing = i;
         }
     }
 }
