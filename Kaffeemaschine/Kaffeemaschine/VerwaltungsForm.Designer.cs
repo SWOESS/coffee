@@ -135,7 +135,6 @@
             this.ingredients.Legends.Add(legend1);
             this.ingredients.Location = new System.Drawing.Point(83, 64);
             this.ingredients.Name = "ingredients";
-            this.ingredients.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             this.tableLayoutPanel1.SetRowSpan(this.ingredients, 15);
             series1.ChartArea = "ChartArea1";
             series1.LabelBorderWidth = 2;
