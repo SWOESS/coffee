@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.ingredients = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -120,11 +120,11 @@
             this.ingredients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.ingredients.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.ingredients.ChartAreas.Add(chartArea2);
             this.tableLayoutPanel1.SetColumnSpan(this.ingredients, 15);
-            legend1.Name = "Legend1";
-            this.ingredients.Legends.Add(legend1);
+            legend2.Name = "Legend1";
+            this.ingredients.Legends.Add(legend2);
             this.ingredients.Location = new System.Drawing.Point(42, 29);
             this.ingredients.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ingredients.Name = "ingredients";
@@ -146,6 +146,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "VerwaltungsForm";
             this.Text = "VerwaltungsForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.VerwaltungsForm_FormClosing);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ingredients)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

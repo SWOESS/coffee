@@ -228,6 +228,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Tag = "Kakao";
             this.pictureBox3.Click += new System.EventHandler(this.ProductIconClicked);
             // 
             // pictureBox4

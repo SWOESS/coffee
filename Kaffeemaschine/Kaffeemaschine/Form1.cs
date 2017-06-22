@@ -28,7 +28,8 @@ namespace Kaffeemaschine
             {
                 if (item.Name == (sender as PictureBox).Tag.ToString())
                 {
-                    item.Make();
+                    MessageBox.Show(item.Name + " wird gemacht");
+                    //item.Make();
                 }
             }
         }
@@ -50,7 +51,6 @@ namespace Kaffeemaschine
                 if (f.Name != this.Name)
                     f.Close();
             }
-            Application.Exit();
         }
     }
 }

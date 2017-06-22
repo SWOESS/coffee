@@ -47,6 +47,7 @@ namespace ProduktverwaltungmitLog
             Cappuchino = new Product("Cappuchino", 0.60, new List<Ingredient> {Coffee, Sugar, MilkPowder});
             listOfProducts.Add(Cappuchino);
             Kakao = new Product("Kakao", 0.60, new List<Ingredient> {Sugar, MilkPowder, Cocoa });
+            listOfProducts.Add(Kakao);
         }
 
         public string[] getIngredientNames()

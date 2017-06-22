@@ -50,5 +50,14 @@ namespace Kaffeemaschine
             }
             ingredients.Update();
         }
+
+        private void VerwaltungsForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Name != this.Name)
+                    f.Close();
+            }
+        }
     }
 }
