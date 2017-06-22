@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
@@ -128,23 +128,23 @@
             this.ingredients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.ingredients.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.ingredients.ChartAreas.Add(chartArea2);
             this.tableLayoutPanel1.SetColumnSpan(this.ingredients, 15);
-            legend1.Name = "Legend1";
-            this.ingredients.Legends.Add(legend1);
+            legend2.Name = "Legend1";
+            this.ingredients.Legends.Add(legend2);
             this.ingredients.Location = new System.Drawing.Point(83, 64);
             this.ingredients.Name = "ingredients";
             this.tableLayoutPanel1.SetRowSpan(this.ingredients, 15);
-            series1.ChartArea = "ChartArea1";
-            series1.LabelBorderWidth = 2;
-            series1.Legend = "Legend1";
-            series1.Name = "Füllstand";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Verkauf";
-            this.ingredients.Series.Add(series1);
-            this.ingredients.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.LabelBorderWidth = 2;
+            series3.Legend = "Legend1";
+            series3.Name = "Füllstand";
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Verkauf";
+            this.ingredients.Series.Add(series3);
+            this.ingredients.Series.Add(series4);
             this.ingredients.Size = new System.Drawing.Size(1194, 909);
             this.ingredients.TabIndex = 5;
             this.ingredients.Text = "ingredients";
