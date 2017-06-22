@@ -10,25 +10,18 @@ using System.Windows.Forms;
 
 namespace Kaffeemaschine
 {
-    public partial class Form1 : Form
+    public partial class VerwaltungsForm : Form
     {
-        public Form1()
+        public VerwaltungsForm()
         {
             InitializeComponent();
-            lCredit.Text = "€2.00";
-        }
-
-        public void ProductIconClicked(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var frm = new VerwaltungsForm();
+            var frm = new Form1();
             frm.Location = this.Location;
             frm.StartPosition = FormStartPosition.Manual;
-            //frm.FormClosing += delegate { this.Show(); };
             frm.Show();
             this.Hide();
         }
