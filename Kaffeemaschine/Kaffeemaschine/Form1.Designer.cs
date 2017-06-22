@@ -110,7 +110,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label5, 11, 7);
             this.tableLayoutPanel1.Controls.Add(this.label6, 16, 7);
             this.tableLayoutPanel1.Controls.Add(this.label7, 1, 12);
-            this.tableLayoutPanel1.Controls.Add(this.lCredit, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lCredit, 0, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -152,8 +152,8 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.tableLayoutPanel1.SetRowSpan(this.label1, 2);
-            this.label1.Size = new System.Drawing.Size(803, 64);
+            this.tableLayoutPanel1.SetRowSpan(this.label1, 3);
+            this.label1.Size = new System.Drawing.Size(803, 96);
             this.label1.TabIndex = 0;
             this.label1.Text = "Münzverwaltung";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -462,7 +462,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.lCredit, 2);
             this.lCredit.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lCredit.ForeColor = System.Drawing.Color.Gold;
-            this.lCredit.Location = new System.Drawing.Point(3, 64);
+            this.lCredit.Location = new System.Drawing.Point(3, 96);
             this.lCredit.Name = "lCredit";
             this.lCredit.Size = new System.Drawing.Size(74, 32);
             this.lCredit.TabIndex = 20;
