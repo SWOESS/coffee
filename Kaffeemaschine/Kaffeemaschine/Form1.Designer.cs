@@ -210,6 +210,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Tag = "Früchtetee";
             this.pictureBox2.Click += new System.EventHandler(this.ProductIconClicked);
             // 
             // pictureBox3
@@ -244,6 +245,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Tag = "Cappuchino";
             this.pictureBox4.Click += new System.EventHandler(this.ProductIconClicked);
             // 
             // pictureBox1
@@ -317,6 +319,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 7;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Tag = "Schwarz";
             this.pictureBox5.Click += new System.EventHandler(this.ProductIconClicked);
             // 
             // pictureBox9
@@ -376,6 +379,7 @@
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 14;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Tag = "Latte";
             this.pictureBox12.Click += new System.EventHandler(this.ProductIconClicked);
             // 
             // label3

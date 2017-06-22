@@ -22,7 +22,8 @@ namespace ProduktverwaltungmitLog
         public Product Latte;
         public Product Black;
         public Product Tea;
-        public Product Chocochhino;
+        public Product Cappuchino;
+        public Product Kakao;
         public void Init()
         {
             listOfIngredients = new List<Ingredient>();
@@ -43,8 +44,9 @@ namespace ProduktverwaltungmitLog
             listOfProducts.Add(Black);
             Tea = new Product("Früchtetee", 0.50, new List<Ingredient> {Sugar, TeaPowder });
             listOfProducts.Add(Tea);
-            Chocochhino = new Product("ChocoChino", 0.60, new List<Ingredient> {Coffee, Sugar, Cocoa});
-            listOfProducts.Add(Chocochhino);
+            Cappuchino = new Product("Cappuchino", 0.60, new List<Ingredient> {Coffee, Sugar, MilkPowder});
+            listOfProducts.Add(Cappuchino);
+            Kakao = new Product("Kakao", 0.60, new List<Ingredient> {Sugar, MilkPowder, Cocoa });
         }
 
         public void SaveToFile()
@@ -100,16 +102,6 @@ namespace ProduktverwaltungmitLog
                     .Select(o => new Ingredient(o[0].Trim(),Convert.ToInt32(o[1].Trim()),Convert.ToDouble(o[2].Trim()), Convert.ToInt32(o[3].Trim()))).ToList();
             }
            
-        }
-    }
-
-    public class IngredientEmptyException : Exception
-    {
-        public Ingredient Ing { get; set; }
-
-        public IngredientEmptyException(Ingredient i)
-        {
-            this.Ing = i;
         }
     }
 }

@@ -13,6 +13,7 @@ namespace Kaffeemaschine
 {
     public partial class Form1 : Form
     {
+        //Instanz der Klasse, über Globals.XYZ kann man die einzelnen Produkte ansprechen
         public globalVarsAndObjects Globals = new globalVarsAndObjects();
         public Form1()
         {
