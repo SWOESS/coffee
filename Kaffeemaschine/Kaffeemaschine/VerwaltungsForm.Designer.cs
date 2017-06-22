@@ -108,7 +108,7 @@
             this.tableLayoutPanel1.SetRowSpan(this.button1, 2);
             this.button1.Size = new System.Drawing.Size(314, 127);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Verwaltung";
+            this.button1.Text = "UserInterface";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -128,6 +128,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "VerwaltungsForm";
             this.Text = "VerwaltungsForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.VerwaltungsForm_FormClosing);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

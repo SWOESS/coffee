@@ -26,9 +26,14 @@ namespace Kaffeemaschine
             this.Hide();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void VerwaltungsForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Name != this.Name)
+                    f.Close();
+            }
+            Application.Exit();
         }
     }
 }
