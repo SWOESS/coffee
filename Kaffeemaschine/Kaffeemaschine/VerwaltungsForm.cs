@@ -1,4 +1,5 @@
 ﻿using System;
+using ProduktverwaltungmitLog;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +14,11 @@ namespace Kaffeemaschine
 {
     public partial class VerwaltungsForm : Form
     {
-        public VerwaltungsForm()
+        globalVarsAndObjects Globals;
+        public VerwaltungsForm(globalVarsAndObjects globals)
         {
             InitializeComponent();
+            Globals = globals;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,8 +33,8 @@ namespace Kaffeemaschine
         private void chart1_Click(object sender, EventArgs e)
         {
             // Data arrays.
-            string[] seriesArray = { "Kaffe", "Tee", "Kakao", "Zucker" };
-            int[] pointsArray = { 1, 2, 3, 4 };
+            string[] seriesArray = Globals.getIngredientNames();
+            int[] pointsArray = Globals.getIngredientIndexes();
 
             // Set title.
             this.ingredients.Titles.Add("Ingredients");

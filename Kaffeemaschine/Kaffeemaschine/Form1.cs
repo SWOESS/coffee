@@ -19,6 +19,7 @@ namespace Kaffeemaschine
         {
             InitializeComponent();
             lCredit.Text = "€2.00";
+            Globals.Init();
         }
 
         public void ProductIconClicked(object sender, EventArgs e)
@@ -28,7 +29,7 @@ namespace Kaffeemaschine
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var frm = new VerwaltungsForm();
+            var frm = new VerwaltungsForm(Globals);
             frm.Location = this.Location;
             frm.StartPosition = FormStartPosition.Manual;
             //frm.FormClosing += delegate { this.Show(); };

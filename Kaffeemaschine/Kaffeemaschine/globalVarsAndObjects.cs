@@ -49,6 +49,28 @@ namespace ProduktverwaltungmitLog
             Kakao = new Product("Kakao", 0.60, new List<Ingredient> {Sugar, MilkPowder, Cocoa });
         }
 
+        public string[] getIngredientNames()
+        {
+            string[] ings = new string[listOfIngredients.Count];
+            int index = 0;
+            foreach (var item in listOfIngredients)
+            {
+                ings[index] = item.Name;
+                index++;
+
+            }
+            return ings;
+        }
+        public int[] getIngredientIndexes()
+        {
+            int[] indexes = new int[listOfIngredients.Count];
+            for (int i = 0; i < listOfIngredients.Count; i++)
+            {
+                indexes[i] = i;
+            }
+            return indexes; 
+        }
+
         public void SaveToFile()
         {
             FileIOLogger = new Logger("FileSaveLog");
