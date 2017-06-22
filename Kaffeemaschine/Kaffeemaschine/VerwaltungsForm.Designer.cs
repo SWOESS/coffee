@@ -71,7 +71,7 @@
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 20;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
@@ -94,9 +94,9 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1606, 1237);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(803, 548);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // button1
@@ -110,10 +110,10 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button1.Location = new System.Drawing.Point(1286, 1104);
-            this.button1.Margin = new System.Windows.Forms.Padding(6);
+            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button1.Name = "button1";
             this.tableLayoutPanel1.SetRowSpan(this.button1, 2);
-            this.button1.Size = new System.Drawing.Size(314, 127);
+            this.button1.Size = new System.Drawing.Size(157, 56);
             this.button1.TabIndex = 4;
             this.button1.Text = "UserInterface";
             this.button1.UseVisualStyleBackColor = false;
@@ -121,43 +121,18 @@
             // 
             // errorProvider1
             // 
-            this.errorProvider1.ContainerControl = this;
-            // 
-            // ingredients
-            // 
-            this.ingredients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.ingredients.ChartAreas.Add(chartArea1);
-            this.tableLayoutPanel1.SetColumnSpan(this.ingredients, 15);
-            legend1.Name = "Legend1";
-            this.ingredients.Legends.Add(legend1);
-            this.ingredients.Location = new System.Drawing.Point(83, 64);
-            this.ingredients.Name = "ingredients";
-            this.ingredients.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            this.tableLayoutPanel1.SetRowSpan(this.ingredients, 15);
-            series1.ChartArea = "ChartArea1";
-            series1.LabelBorderWidth = 2;
-            series1.Legend = "Legend1";
-            series1.Name = "Füllstand";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Verkauf";
-            this.ingredients.Series.Add(series1);
-            this.ingredients.Series.Add(series2);
-            this.ingredients.Size = new System.Drawing.Size(1194, 909);
-            this.ingredients.TabIndex = 5;
-            this.ingredients.Text = "ingredients";
-            this.ingredients.Click += new System.EventHandler(this.chart1_Click);
+            this.progressBar1.Location = new System.Drawing.Point(83, 64);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(74, 55);
+            this.progressBar1.TabIndex = 5;
             // 
             // VerwaltungsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1606, 1237);
+            this.ClientSize = new System.Drawing.Size(803, 548);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "VerwaltungsForm";
             this.Text = "VerwaltungsForm";
             this.tableLayoutPanel1.ResumeLayout(false);
