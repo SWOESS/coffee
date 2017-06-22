@@ -121,10 +121,6 @@
             // 
             // errorProvider1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(83, 64);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(74, 55);
-            this.progressBar1.TabIndex = 5;
             // 
             // VerwaltungsForm
             // 
