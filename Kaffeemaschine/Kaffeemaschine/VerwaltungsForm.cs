@@ -25,5 +25,10 @@ namespace Kaffeemaschine
             frm.Show();
             this.Hide();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
