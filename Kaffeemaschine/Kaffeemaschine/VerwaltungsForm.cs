@@ -32,22 +32,23 @@ namespace Kaffeemaschine
 
         private void chart1_Click(object sender, EventArgs e)
         {
+            Series series = new Series();
+            ingredients.Series.Add(series);
             // Data arrays.
             string[] seriesArray = Globals.getIngredientNames();
             int[] pointsArray = Globals.getIngredientIndexes();
 
             // Set title.
-            this.ingredients.Titles.Add("Ingredients");
+            this.ingredients.Titles.Add("Füllstände");
 
             // Add series.
             for (int i = 0; i < seriesArray.Length; i++)
             {
-                // Add series.
-                Series series = this.ingredients.Series.Add(seriesArray[i]);
-
-                // Add point.
-                series.Points.Add(pointsArray[i]);
+                DataPoint p = new DataPoint(series);
+                p.Label = seriesArray[i];
+                p.SetValueXY(i, 4);
             }
+            ingredients.Update();
         }
     }
 }
