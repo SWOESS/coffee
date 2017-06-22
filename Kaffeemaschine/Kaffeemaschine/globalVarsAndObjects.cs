@@ -13,7 +13,7 @@ namespace ProduktverwaltungmitLog
     {
         Logger FileIOLogger;
         public List<Ingredient> listOfIngredients;
-        private List<Product> listOfProducts;
+        public List<Product> listOfProducts;
         public Ingredient Sugar;
         public Ingredient Coffee;
         public Ingredient TeaPowder;

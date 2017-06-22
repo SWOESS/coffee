@@ -25,7 +25,7 @@ namespace ProduktverwaltungmitLog
 
         public List<Ingredient> Ingredients = new List<Ingredient>();
         private double price;
-        private string Name;
+        public string Name;
 
         /// <summary>
         /// "macht" eine Einheit des Products, und zieht dabei den Füllstand aller Ingredients ab.

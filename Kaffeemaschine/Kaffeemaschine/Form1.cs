@@ -24,7 +24,13 @@ namespace Kaffeemaschine
 
         public void ProductIconClicked(object sender, EventArgs e)
         {
-            
+            foreach (Product item in Globals.listOfProducts)
+            {
+                if (item.Name == (sender as PictureBox).Tag.ToString())
+                {
+                    item.Make();
+                }
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
