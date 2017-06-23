@@ -55,10 +55,11 @@ namespace Kaffeemaschine
                     f.Close();
             }
         }
-
+        //adds a picturebox to the form and initializes a timer to hide the gif after x time and show the panel
         private void Form1_Load(object sender, EventArgs e)
         {
             this.BackColor = Color.FromArgb(241,250,254);
+            tableLayoutPanel1.BackColor = Color.FromArgb(241, 250, 254);
             tableLayoutPanel1.Visible = false;
             loadingGif = new PictureBox();
             loadingGif.Location = new Point(0, 0);
@@ -68,7 +69,7 @@ namespace Kaffeemaschine
             loadingGif.Size = new Size(this.Width,this.Height);
             this.Controls.Add(loadingGif);
             t = new Timer();
-            t.Interval = 1500;
+            t.Interval = 2500;
             t.Tick += t_tick;
             t.Start();
         }
