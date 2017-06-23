@@ -15,6 +15,9 @@ namespace Kaffeemaschine
     {
         //Instanz der Klasse, über Globals.XYZ kann man die einzelnen Produkte ansprechen
         public globalVarsAndObjects Globals = new globalVarsAndObjects();
+
+        PictureBox loadingGif;
+        Timer t;
         public Form1()
         {
             InitializeComponent();
@@ -51,6 +54,30 @@ namespace Kaffeemaschine
                 if (f.Name != this.Name)
                     f.Close();
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(241,250,254);
+            tableLayoutPanel1.Visible = false;
+            loadingGif = new PictureBox();
+            loadingGif.Location = new Point(0, 0);
+           
+            loadingGif.Image = Properties.Resources.loading;
+            loadingGif.SizeMode = PictureBoxSizeMode.Zoom;
+            loadingGif.Size = new Size(this.Width,this.Height);
+            this.Controls.Add(loadingGif);
+            t = new Timer();
+            t.Interval = 1500;
+            t.Tick += t_tick;
+            t.Start();
+        }
+        private void t_tick(object sender, EventArgs e)
+        {
+            loadingGif.Visible = false;
+            tableLayoutPanel1.Visible = true;
+            t.Stop();
+            this.FormBorderStyle = FormBorderStyle.Sizable;
         }
     }
 }

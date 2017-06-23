@@ -61,11 +61,12 @@ namespace Kaffeemaschine.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static string pLattePic {
+        internal static System.Drawing.Bitmap loading {
             get {
-                return ResourceManager.GetString("pLattePic", resourceCulture);
+                object obj = ResourceManager.GetObject("loading", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
