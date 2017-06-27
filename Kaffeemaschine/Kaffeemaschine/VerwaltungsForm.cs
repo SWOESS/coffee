@@ -59,5 +59,10 @@ namespace Kaffeemaschine
                     f.Close();
             }
         }
+
+        private void chart1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
