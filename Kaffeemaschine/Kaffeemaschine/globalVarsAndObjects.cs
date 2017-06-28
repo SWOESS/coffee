@@ -50,6 +50,18 @@ namespace ProduktverwaltungmitLog
             listOfProducts.Add(Kakao);
         }
 
+        public double[] getIngredientFill()
+        {
+            double[] fill = new double[listOfIngredients.Count];
+            int count = 0;
+            foreach (var Ingredient in listOfIngredients)
+            {
+                fill[count] = Ingredient.Level;
+                count++;
+            }
+            return fill;
+        }
+
         public string[] getIngredientNames()
         {
             string[] ings = new string[listOfIngredients.Count];

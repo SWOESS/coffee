@@ -32,23 +32,6 @@ namespace Kaffeemaschine
 
         private void chart1_Click(object sender, EventArgs e)
         {
-            Series series = new Series();
-            //ingredients.Series.Add(series);
-            // Data arrays.
-            string[] seriesArray = Globals.getIngredientNames();
-            int[] pointsArray = Globals.getIngredientIndexes();
-
-            // Set title.
-            //this.ingredients.Titles.Add("Füllstände");
-
-            // Add series.
-            for (int i = 0; i < seriesArray.Length; i++)
-            {
-                DataPoint p = new DataPoint(series);
-                p.Label = seriesArray[i];
-                p.SetValueXY(i, 4);
-            }
-            //ingredients.Update();
         }
 
         private void VerwaltungsForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -63,6 +46,30 @@ namespace Kaffeemaschine
         private void chart1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void VerwaltungsForm_Load(object sender, EventArgs e)
+        {
+            Series series = chart1.Series.Add("Füllstand");
+            series.ChartType = SeriesChartType.Bar;
+            series.ChartArea = "FillChartArea";
+            // Data arrays.
+            string[] seriesArray = Globals.getIngredientNames();
+            int[] pointsArray = Globals.getIngredientIndexes();
+            double[] fillArray = Globals.getIngredientFill();
+            // Set title.
+            this.chart1.Titles.Add("Füllstände");
+            chart1.Titles[0].Text = "test";
+            // Add series.
+            for (int i = 0; i < seriesArray.Length; i++)
+            {
+                series.Points.AddXY(i, fillArray[i]);
+                /*
+                DataPoint p = new DataPoint(series);
+                p.Label = seriesArray[i];
+                p.SetValueXY(i, 4);
+                */        
+            }
         }
     }
 }
