@@ -50,6 +50,10 @@ namespace Kaffeemaschine
 
         private void VerwaltungsForm_Load(object sender, EventArgs e)
         {
+            foreach (var ingre in Globals.listOfIngredients)
+            {
+                //series s = new series();
+            }
             //Serie = Reihe von Datenpunkten, die in gewählter Formatierung in einer Chartarea angezeigt werden
             //Serie für Datenanzeige wird erstellt, mit dem namen Füllstand
             Series series = chart1.Series.Add("Füllstand");
@@ -72,7 +76,6 @@ namespace Kaffeemaschine
 
             // Set title
             this.chart1.Titles.Add("Füllstände");
-            chart1.Titles[0].Text = "test";
 
             // Add series.
             //Es wird durch das array geloopt und für jeden Ingredient wird ein Datenpunkt in die Serie eingefügt
