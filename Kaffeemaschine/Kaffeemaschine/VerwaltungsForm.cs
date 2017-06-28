@@ -63,10 +63,17 @@ namespace Kaffeemaschine
             int[] pointsArray = Globals.getIngredientIndexes();
             double[] fillArray = Globals.getIngredientFill();
             series.IsValueShownAsLabel = true;
+            series.IsVisibleInLegend = true;
+
+            //Setting Border style
+            chart1.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
+            chart1.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+
 
             // Set title
             this.chart1.Titles.Add("Füllstände");
             chart1.Titles[0].Text = "test";
+
             // Add series.
             //Es wird durch das array geloopt und für jeden Ingredient wird ein Datenpunkt in die Serie eingefügt
             for (int i = 0; i < seriesArray.Length; i++)
@@ -77,7 +84,11 @@ namespace Kaffeemaschine
                 p.Label = seriesArray[i];
                 //i ist quasi der Index des Ingredients, die X Achse im Diagramm (immer um eins höher)
                 //fillArray[i] ist der Y-Wert des Datenpunkts, Der Füllstand der Ingredients. Dies ist die Länge des Balkens.
-                series.Points.AddXY(i, fillArray[i]);        
+                series.Points.AddXY(i, fillArray[i]);
+                //Color change
+                chart1.Palette = ChartColorPalette.Pastel;
+                // name of Lengend
+                chart1.Series[0].LegendText = seriesArray[0];
             }
         }
     }
