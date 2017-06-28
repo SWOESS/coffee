@@ -15,11 +15,12 @@ namespace Kaffeemaschine
     {
         //Instanz der Klasse, über Globals.XYZ kann man die einzelnen Produkte ansprechen
         public globalVarsAndObjects Globals = new globalVarsAndObjects();
-
         PictureBox loadingGif;
+        bool bSLG;
         Timer t;
-        public Form1()
+        public Form1(bool showLoadingGif)
         {
+            bSLG = showLoadingGif;
             InitializeComponent();
             lCredit.Text = "€2.00";
             Globals.Init();
@@ -58,6 +59,10 @@ namespace Kaffeemaschine
         //adds a picturebox to the form and initializes a timer to hide the gif after x time and show the panel
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (!bSLG)
+            {
+                return;
+            }
             this.BackColor = Color.FromArgb(241,250,254);
             tableLayoutPanel1.BackColor = Color.FromArgb(241, 250, 254);
             tableLayoutPanel1.Visible = false;

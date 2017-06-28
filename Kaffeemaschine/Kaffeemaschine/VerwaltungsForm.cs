@@ -23,7 +23,7 @@ namespace Kaffeemaschine
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var frm = new Form1();
+            var frm = new Form1(false);
             frm.Location = this.Location;
             frm.StartPosition = FormStartPosition.Manual;
             frm.Show();
@@ -33,13 +33,13 @@ namespace Kaffeemaschine
         private void chart1_Click(object sender, EventArgs e)
         {
             Series series = new Series();
-            ingredients.Series.Add(series);
+            //ingredients.Series.Add(series);
             // Data arrays.
             string[] seriesArray = Globals.getIngredientNames();
             int[] pointsArray = Globals.getIngredientIndexes();
 
             // Set title.
-            this.ingredients.Titles.Add("Füllstände");
+            //this.ingredients.Titles.Add("Füllstände");
 
             // Add series.
             for (int i = 0; i < seriesArray.Length; i++)
@@ -48,7 +48,7 @@ namespace Kaffeemaschine
                 p.Label = seriesArray[i];
                 p.SetValueXY(i, 4);
             }
-            ingredients.Update();
+            //ingredients.Update();
         }
 
         private void VerwaltungsForm_FormClosing(object sender, FormClosingEventArgs e)
