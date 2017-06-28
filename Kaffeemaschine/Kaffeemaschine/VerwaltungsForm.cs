@@ -50,49 +50,54 @@ namespace Kaffeemaschine
 
         private void VerwaltungsForm_Load(object sender, EventArgs e)
         {
-            foreach (var ingre in Globals.listOfIngredients)
-            {
-                //series s = new series();
-            }
             //Serie = Reihe von Datenpunkten, die in gewählter Formatierung in einer Chartarea angezeigt werden
             //Serie für Datenanzeige wird erstellt, mit dem namen Füllstand
-            Series series = chart1.Series.Add("Füllstand");
+            //Series series = chart1.Series.Add("Füllstand");
             //Die Serie soll ein Balkendiagramm sein
-            series.ChartType = SeriesChartType.StackedBar;
+            //series.ChartType = SeriesChartType.StackedBar;
             //Die Serie wird zur im Designer erstellen ChartArea per Name hinzugefügt.
-            series.ChartArea = "FillChartArea";
+            //series.ChartArea = "FillChartArea";
             // Data arrays.
             //Arrays mit den Daten zu den Ingredients
             string[] seriesArray = Globals.getIngredientNames();
             int[] pointsArray = Globals.getIngredientIndexes();
             double[] fillArray = Globals.getIngredientFill();
-            series.IsValueShownAsLabel = true;
-            series.IsVisibleInLegend = true;
+            //series.IsValueShownAsLabel = true;
 
-            //Setting Border style
+            // Liienin in chart ausblenden
             chart1.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
             chart1.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+            int i = 0;
+            foreach (var ingre in Globals.listOfIngredients)
+            {
+                Series s = new Series();
+                s.IsValueShownAsLabel = true;
+                s.IsVisibleInLegend = true;
+
+                chart1.Series.Add(ingre.Name);
+                chart1.Series[ingre.Name].ChartType = SeriesChartType.Column;
+                chart1.Series[ingre.Name].Points.AddY(20);
+                chart1.Series[ingre.Name].ChartArea = "FillChartArea";
+                
+                    DataPoint p = new DataPoint();
+                    p.XValue = i;
+                    p.YValues = fillArray;
+                    p.Label = seriesArray[i];
+                    //i ist quasi der Index des Ingredients, die X Achse im Diagramm (immer um eins höher)
+                    //fillArray[i] ist der Y-Wert des Datenpunkts, Der Füllstand der Ingredients. Dies ist die Länge des Balkens.
+                    s.Points.AddXY(i, fillArray[i]);
+                i++;
+            }
 
 
+            //Color change
+            chart1.Palette = ChartColorPalette.Pastel;
             // Set title
             this.chart1.Titles.Add("Füllstände");
 
-            // Add series.
-            //Es wird durch das array geloopt und für jeden Ingredient wird ein Datenpunkt in die Serie eingefügt
-            for (int i = 0; i < seriesArray.Length; i++)
-            {
-                DataPoint p = new DataPoint();
-                p.XValue = i;
-                p.YValues = fillArray;
-                p.Label = seriesArray[i];
-                //i ist quasi der Index des Ingredients, die X Achse im Diagramm (immer um eins höher)
-                //fillArray[i] ist der Y-Wert des Datenpunkts, Der Füllstand der Ingredients. Dies ist die Länge des Balkens.
-                series.Points.AddXY(i, fillArray[i]);
-                //Color change
-                chart1.Palette = ChartColorPalette.Pastel;
-                // name of Lengend
-                chart1.Series[0].LegendText = seriesArray[0];
+                // Add series.
+                //Es wird durch das array geloopt und für jeden Ingredient wird ein Datenpunkt in die Serie eingefügt
+                
             }
         }
-    }
 }
