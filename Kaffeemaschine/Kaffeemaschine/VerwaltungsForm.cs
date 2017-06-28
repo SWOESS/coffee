@@ -62,8 +62,9 @@ namespace Kaffeemaschine
             string[] seriesArray = Globals.getIngredientNames();
             int[] pointsArray = Globals.getIngredientIndexes();
             double[] fillArray = Globals.getIngredientFill();
+            series.IsValueShownAsLabel = true;
 
-            // Set title.
+            // Set title
             this.chart1.Titles.Add("Füllstände");
             chart1.Titles[0].Text = "test";
             // Add series.
