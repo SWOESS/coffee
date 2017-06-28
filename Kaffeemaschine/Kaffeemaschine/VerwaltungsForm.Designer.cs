@@ -133,12 +133,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.chart1.BackColor = System.Drawing.Color.WhiteSmoke;
-            chartArea1.AxisX.Maximum = 10D;
-            chartArea1.AxisX.Minimum = 0D;
             chartArea1.AxisX2.Maximum = 100D;
             chartArea1.AxisX2.Minimum = 0D;
-            chartArea1.AxisY.Maximum = 100D;
-            chartArea1.AxisY.Minimum = 0D;
             chartArea1.AxisY2.Maximum = 100D;
             chartArea1.AxisY2.Minimum = 0D;
             chartArea1.BackColor = System.Drawing.Color.WhiteSmoke;

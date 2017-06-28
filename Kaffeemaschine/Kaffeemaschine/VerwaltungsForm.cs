@@ -76,12 +76,20 @@ namespace Kaffeemaschine
 
                 chart1.Series.Add(ingre.Name);
                 chart1.Series[ingre.Name].ChartType = SeriesChartType.Column;
-                chart1.Series[ingre.Name].Points.AddY(20);
+                chart1.Series[ingre.Name].Points.AddY(100);
                 chart1.Series[ingre.Name].ChartArea = "FillChartArea";
-                
-                    DataPoint p = new DataPoint();
+
+                double ymin =0;
+                double ymax = Globals.Sugar.LvlMax;
+
+                chart1.ChartAreas[0].AxisY.ScaleView.Position = ymin;
+                chart1.ChartAreas[0].AxisY.ScaleView.Size = ymax - ymin;
+
+                DataPoint p = new DataPoint();
                     p.XValue = i;
-                    p.YValues = fillArray;
+                    double[] xyz = new double[1];
+                    xyz[0] = fillArray[i]; 
+                    p.YValues = xyz;
                     p.Label = seriesArray[i];
                     //i ist quasi der Index des Ingredients, die X Achse im Diagramm (immer um eins höher)
                     //fillArray[i] ist der Y-Wert des Datenpunkts, Der Füllstand der Ingredients. Dies ist die Länge des Balkens.
