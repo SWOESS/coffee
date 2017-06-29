@@ -34,6 +34,7 @@ namespace Kaffeemaschine
                 {
                     try
                     {
+                        item.TryMake();
                         bool error = false;
                         error = Globals.UserChange.Deplete(item.Price);
                         if (error)
