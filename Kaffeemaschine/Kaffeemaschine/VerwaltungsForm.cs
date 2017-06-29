@@ -75,7 +75,7 @@ namespace Kaffeemaschine
             Series FillLevelSeries = new Series();
             FillLevelSeries.IsValueShownAsLabel = true;
             FillLevelSeries.IsVisibleInLegend = true;
-            FillLevelSeries.ChartType = SeriesChartType.Column;
+            FillLevelSeries.ChartType = SeriesChartType.Bar;
             FillLevelSeries.ChartArea = "FillChartArea";
 
             int i = 0;

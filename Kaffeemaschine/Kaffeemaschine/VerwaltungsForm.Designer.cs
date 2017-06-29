@@ -131,10 +131,11 @@
             this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.chart1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.chart1.BackColor = System.Drawing.Color.Transparent;
             this.chart1.BorderlineColor = System.Drawing.Color.Transparent;
             this.chart1.BorderlineWidth = 3;
             chartArea1.AxisX.InterlacedColor = System.Drawing.Color.Transparent;
+            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Transparent;
             chartArea1.AxisX.LineColor = System.Drawing.Color.Transparent;
             chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
             chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
@@ -157,6 +158,7 @@
             chartArea1.AxisY2.Maximum = 100D;
             chartArea1.AxisY2.Minimum = 0D;
             chartArea1.BackColor = System.Drawing.Color.WhiteSmoke;
+            chartArea1.BackSecondaryColor = System.Drawing.Color.Transparent;
             chartArea1.BorderColor = System.Drawing.Color.Transparent;
             chartArea1.CursorX.LineColor = System.Drawing.Color.Transparent;
             chartArea1.CursorX.SelectionColor = System.Drawing.Color.Transparent;
