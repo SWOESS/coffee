@@ -32,8 +32,21 @@ namespace Kaffeemaschine
             {
                 if (item.Name == (sender as PictureBox).Tag.ToString())
                 {
-                    MessageBox.Show(item.Name + " wird gemacht");
-                    //item.Make();
+                    try
+                    {
+                        item.TryMake();
+                        bool error = false;
+                        error = Globals.UserChange.Deplete(item.Price);
+                        if (error)
+                        {
+                            MessageBox.Show("Guthaben zu niedrig");
+                            return;
+                        }
+                    }
+                    catch (IngredientEmptyException iee)
+                    {
+                        MessageBox.Show("Zutat " + iee.Ing + " ist leer.");
+                    }
                 }
             }
         }

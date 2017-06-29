@@ -8,25 +8,23 @@ using System.Drawing;
 
 namespace ProduktverwaltungmitLog
 {
-    class Coin
+     public class Coin
     {
-        public double Value { get; set; }
-        public int Stock { get; set; }
-        public string Description { get; set; }
-        public Bitmap CoinPicture { get; set; }
-
-        public Coin(double val, int startingStock, string desc, Bitmap valPic)
+        public Coin()
         {
-            this.Value = val;
-            this.Stock = startingStock;
-            this.Description = desc;
-            this.CoinPicture = valPic;
+            textFileToStock();
         }
+        public int Coin01Stock { get; set; }
+        public int Coin02Stock { get; set; }
+        public int Coin05Stock { get; set; }
+        public int Coin1Stock { get; set; }
+        public int Coin2Stock { get; set; }
+
         public void stockToTextFile()
         {
             string path = "..\\magazin.txt";
             File.WriteAllText(path, string.Empty);
-            string lines = Value + "\r\n" + Stock + "\r\n" + Description;
+            string lines = Coin01Stock + "\r\n" + Coin02Stock + "\r\n" + Coin05Stock + "\r\n" + Coin1Stock + "\r\n" + Coin2Stock;
             StreamWriter sw = new StreamWriter(path, true);
             sw.WriteLine(lines);
             sw.Close();
@@ -37,16 +35,22 @@ namespace ProduktverwaltungmitLog
             try
             {
                 StreamReader sr = new StreamReader(path);
-                Value = Convert.ToDouble(sr.ReadLine());
-                Stock = Convert.ToInt32(sr.ReadLine());
-                Description = Convert.ToString(sr.ReadLine());
+                this.Coin01Stock = Convert.ToInt32(sr.ReadLine());
+                this.Coin02Stock = Convert.ToInt32(sr.ReadLine());
+                this.Coin05Stock = Convert.ToInt32(sr.ReadLine());
+                this.Coin1Stock = Convert.ToInt32(sr.ReadLine());
+                this.Coin2Stock = Convert.ToInt32(sr.ReadLine());
+
                 sr.Close();
             }
             catch (Exception e)
             {
-                ProduktverwaltungmitLog.Logger l = new ProduktverwaltungmitLog.Logger("ChangeIO");
+                Logger l = new Logger("ChangeIO");
                 l.Error(e.Message);
             }
         }
+
+    }
+      
     }
 }

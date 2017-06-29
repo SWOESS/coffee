@@ -17,20 +17,20 @@ namespace ProduktverwaltungmitLog
         public Product(string pName, double price, List<Ingredient> ListOfIngredients)
         {
             this.Name = pName;
-            this.price = price;
+            this.Price = price;
             this.Ingredients = ListOfIngredients;
 
             
         }
 
         public List<Ingredient> Ingredients = new List<Ingredient>();
-        private double price;
+        public double Price { get; private set; }
         public string Name;
 
         /// <summary>
         /// "macht" eine Einheit des Products, und zieht dabei den Füllstand aller Ingredients ab.
         /// </summary>
-        public void Make()
+        public void TryMake()
         {
             try
             {
@@ -43,7 +43,6 @@ namespace ProduktverwaltungmitLog
 
                     }
                 }
-
             }
             catch (IngredientEmptyException IngEmptyExc)
             {
@@ -55,7 +54,7 @@ namespace ProduktverwaltungmitLog
 
         public override string ToString()
         {
-            string returnValue = this.Name + ";" + this.price.ToString() + ";";
+            string returnValue = this.Name + ";" + this.Price.ToString() + ";";
             foreach (var ing in this.Ingredients)
             {
                 returnValue += "," + ing.Name;

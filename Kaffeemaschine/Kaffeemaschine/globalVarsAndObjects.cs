@@ -13,6 +13,7 @@ namespace ProduktverwaltungmitLog
     {
         Logger FileIOLogger;
         public Change UserChange;
+        public Coin UserCoin;
         public List<Ingredient> listOfIngredients;
         public List<Product> listOfProducts;
         public Ingredient Sugar;
@@ -28,6 +29,7 @@ namespace ProduktverwaltungmitLog
         public void Init()
         {
             UserChange = new Change(2.00);
+            UserCoin = new Coin();
             listOfIngredients = new List<Ingredient>();
             listOfProducts = new List<Product>();
             Sugar = new Ingredient("Sugar", 100, 2);
