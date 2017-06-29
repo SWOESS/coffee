@@ -23,7 +23,7 @@ namespace Kaffeemaschine
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var frm = new Form1(false);
+            var frm = new Form1(false, Globals);
             frm.Location = this.Location;
             frm.StartPosition = FormStartPosition.Manual;
             frm.Show();
