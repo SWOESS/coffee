@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
@@ -66,7 +65,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.Controls.Add(this.button1, 16, 18);
-            this.tableLayoutPanel1.Controls.Add(this.chart1, 4, 4);
+            this.tableLayoutPanel1.Controls.Add(this.chart1, 3, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -142,15 +141,11 @@
             chartArea1.Name = "FillChartArea";
             chartArea1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.chart1.ChartAreas.Add(chartArea1);
-            this.tableLayoutPanel1.SetColumnSpan(this.chart1, 12);
-            legend1.BackColor = System.Drawing.Color.WhiteSmoke;
-            legend1.Name = "FillChartLegend";
-            legend1.TextWrapThreshold = 100;
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(163, 111);
+            this.tableLayoutPanel1.SetColumnSpan(this.chart1, 14);
+            this.chart1.Location = new System.Drawing.Point(123, 57);
             this.chart1.Name = "chart1";
-            this.tableLayoutPanel1.SetRowSpan(this.chart1, 10);
-            this.chart1.Size = new System.Drawing.Size(474, 264);
+            this.tableLayoutPanel1.SetRowSpan(this.chart1, 14);
+            this.chart1.Size = new System.Drawing.Size(554, 372);
             this.chart1.TabIndex = 5;
             this.chart1.Text = "chart1";
             title1.DockedToChartArea = "FillChartArea";
