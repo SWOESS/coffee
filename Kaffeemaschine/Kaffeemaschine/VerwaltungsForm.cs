@@ -62,7 +62,7 @@ namespace Kaffeemaschine
             string[] seriesArray = Globals.getIngredientNames();
             int[] pointsArray = Globals.getIngredientIndexes();
             double[] fillArray = Globals.getIngredientFill();
-            Color[] pointColors = new Color[] { Color.Beige, Color.OrangeRed, Color.RosyBrown, Color.AntiqueWhite, Color.GreenYellow, Color.Ivory};
+            Color[] pointColors = new Color[] { Color.Beige, Color.OrangeRed, Color.RosyBrown, Color.AntiqueWhite, Color.GreenYellow, Color.Ivory };
             Series s = new Series();
             s.IsValueShownAsLabel = true;
             // Liienin in chart ausblenden
@@ -72,7 +72,11 @@ namespace Kaffeemaschine
             chart1.ChartAreas[0].AxisX.LineWidth = 0;
             chart1.ChartAreas[0].AxisY.LineWidth = 0;
 
-            chart1.ChartAreas[0].AxisX.Title = "seriesArray";
+            var legend = new Legend();
+            legend.LegendStyle = LegendStyle.Row;
+            legend.Docking = Docking.Left;
+            legend.DockedToChartArea = "test";
+            legend.IsDockedInsideChartArea = true;
 
             Series FillLevelSeries = new Series();
             FillLevelSeries.IsValueShownAsLabel = true;
@@ -84,7 +88,9 @@ namespace Kaffeemaschine
             foreach (var ingre in Globals.listOfIngredients)
             {
                     DataPoint p = new DataPoint();
-                    p.XValue = i;
+                //legend.DockedToChartArea = ingre.Name;
+
+                p.XValue = i;
                     double[] xyz = new double[1];
                     xyz[0] = fillArray[i];
                     p.LegendText = ingre.Name;
