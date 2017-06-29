@@ -75,7 +75,7 @@ namespace Kaffeemaschine
             FillLevelSeries.ChartType = SeriesChartType.Bar;
             FillLevelSeries.ChartArea = "FillChartArea";
 
-
+            
             int i = 0;
             foreach (var ingre in Globals.listOfIngredients)
             {
