@@ -62,41 +62,37 @@ namespace Kaffeemaschine
             string[] seriesArray = Globals.getIngredientNames();
             int[] pointsArray = Globals.getIngredientIndexes();
             double[] fillArray = Globals.getIngredientFill();
+            Color[] pointColors = new Color[] { Color.Beige, Color.OrangeRed, Color.RosyBrown, Color.AntiqueWhite, Color.GreenYellow, Color.Ivory};
             //series.IsValueShownAsLabel = true;
 
             // Liienin in chart ausblenden
             chart1.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
             chart1.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+
+            Series FillLevelSeries = new Series();
+            FillLevelSeries.IsValueShownAsLabel = true;
+            FillLevelSeries.IsVisibleInLegend = true;
+            FillLevelSeries.ChartType = SeriesChartType.Bar;
+            FillLevelSeries.ChartArea = "FillChartArea";
+
+
             int i = 0;
             foreach (var ingre in Globals.listOfIngredients)
             {
-                Series s = new Series();
-                s.IsValueShownAsLabel = true;
-                s.IsVisibleInLegend = true;
-
-                chart1.Series.Add(ingre.Name);
-                chart1.Series[ingre.Name].ChartType = SeriesChartType.Column;
-                chart1.Series[ingre.Name].Points.AddY(100);
-                chart1.Series[ingre.Name].ChartArea = "FillChartArea";
-
-                double ymin =0;
-                double ymax = Globals.Sugar.LvlMax;
-
-                chart1.ChartAreas[0].AxisY.ScaleView.Position = ymin;
-                chart1.ChartAreas[0].AxisY.ScaleView.Size = ymax - ymin;
-
-                DataPoint p = new DataPoint();
+                    DataPoint p = new DataPoint();
                     p.XValue = i;
                     double[] xyz = new double[1];
                     xyz[0] = fillArray[i]; 
                     p.YValues = xyz;
+                    p.Color = pointColors[i];
                     p.Label = seriesArray[i];
                     //i ist quasi der Index des Ingredients, die X Achse im Diagramm (immer um eins höher)
                     //fillArray[i] ist der Y-Wert des Datenpunkts, Der Füllstand der Ingredients. Dies ist die Länge des Balkens.
-                    s.Points.AddXY(i, fillArray[i]);
+                    FillLevelSeries.Points.AddXY(i, fillArray[i]);
                 i++;
             }
 
+            chart1.Series.Add(FillLevelSeries);
 
             //Color change
             chart1.Palette = ChartColorPalette.Pastel;

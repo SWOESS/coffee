@@ -40,8 +40,10 @@ namespace ProduktverwaltungmitLog
                     {
                         //Vom Ingredient Füllstand wird abgezogen.
                         ing.DepleteLevel();
+
                     }
                 }
+
             }
             catch (IngredientEmptyException IngEmptyExc)
             {

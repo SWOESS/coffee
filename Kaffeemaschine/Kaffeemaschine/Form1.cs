@@ -22,8 +22,8 @@ namespace Kaffeemaschine
         {
             bSLG = showLoadingGif;
             InitializeComponent();
-            lCredit.Text = "€2.00";
             Globals.Init();
+            lCredit.Text = Globals.UserChange.Credit.ToString() + "€";
         }
 
         public void ProductIconClicked(object sender, EventArgs e)
