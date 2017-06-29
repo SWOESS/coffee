@@ -98,6 +98,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\loading.gif" />
+    <None Include="Resources\Coin01.bmp" />
+    <None Include="Resources\01_Münze.PNG" />
+    <None Include="Resources\02_Münze.PNG" />
+    <None Include="Resources\05_Münze.PNG" />
+    <None Include="Resources\1_Münze.PNG" />
+    <None Include="Resources\2_Münze.PNG" />
+    <None Include="Resources\Coin01Picture.png" />
+    <None Include="Resources\Coin1Picture.png" />
+    <None Include="Resources\Coin02Picture.png" />
+    <None Include="Resources\Coin2Picture.png" />
+    <None Include="Resources\Coin05Picture.png" />
     <Content Include="Resources\pMacchiatoPic.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

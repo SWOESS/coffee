@@ -13,12 +13,25 @@ namespace ProduktverwaltungmitLog
         public Coin()
         {
             textFileToStock();
+            CoinStock = new int[] {Coin01Stock, Coin02Stock, Coin05Stock,Coin1Stock, Coin2Stock };
+        }
+        public Coin(int c1c, int c2c, int c01c, int c02c, int c05c)
+        {
+            Coin01Stock = c01c;
+            Coin02Stock = c02c;
+            Coin05Stock = c05c;
+            Coin1Stock = c1c;
+            Coin2Stock = c2c;
+
+            CoinStock = new int[] { Coin01Stock, Coin02Stock, Coin05Stock, Coin1Stock, Coin2Stock };
         }
         public int Coin01Stock { get; set; }
         public int Coin02Stock { get; set; }
         public int Coin05Stock { get; set; }
         public int Coin1Stock { get; set; }
         public int Coin2Stock { get; set; }
+
+        public int[] CoinStock { get; private set; }
 
         public void stockToTextFile()
         {
@@ -52,4 +65,5 @@ namespace ProduktverwaltungmitLog
 
     }
       
-    }
+    
+}

@@ -29,7 +29,14 @@ namespace ProduktverwaltungmitLog
         public void Init()
         {
             UserChange = new Change(2.00);
-            UserCoin = new Coin();
+            if (File.Exists("..\\magazin.txt"))
+            {
+                UserCoin = new Coin();
+            }
+            else
+            {
+                UserCoin = new Coin(20,20,20,20,20);
+            }
             listOfIngredients = new List<Ingredient>();
             listOfProducts = new List<Product>();
             Sugar = new Ingredient("Sugar", 100, 2);
