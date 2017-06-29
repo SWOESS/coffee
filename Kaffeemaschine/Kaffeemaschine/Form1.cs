@@ -18,9 +18,18 @@ namespace Kaffeemaschine
         PictureBox loadingGif;
         bool bSLG;
         Timer t;
-        public Form1(bool showLoadingGif)
+        public Form1(bool showLoadingGif, globalVarsAndObjects Gl)
         {
             bSLG = showLoadingGif;
+            InitializeComponent();
+            Globals.Init();
+            lCredit.Text = Globals.UserChange.Credit.ToString() + "€";
+            Globals = Gl;
+        }
+        public Form1(bool sl)
+        {
+
+            bSLG = sl;
             InitializeComponent();
             Globals.Init();
             lCredit.Text = Globals.UserChange.Credit.ToString() + "€";
@@ -82,7 +91,7 @@ namespace Kaffeemaschine
             tableLayoutPanel1.Visible = false;
             loadingGif = new PictureBox();
             loadingGif.Location = new Point(0, 0);
-           
+            
             loadingGif.Image = Properties.Resources.loading;
             loadingGif.SizeMode = PictureBoxSizeMode.Zoom;
             loadingGif.Size = new Size(this.Width,this.Height);
@@ -102,8 +111,9 @@ namespace Kaffeemaschine
 
         private void pictureBox14_Click(object sender, EventArgs e)
         {
-         Tuple<int[], double> values = Globals.UserCoin.DisplayCurrentChange(Globals.UserChange.Credit);
-            Globals.UserChange.Credit = values.Item2;
+            Globals.UserChange.Increase(Convert.ToDouble((sender as PictureBox).Tag));
+         //Tuple<int[], double> values = Globals.UserCoin.DisplayCurrentChange(Globals.UserChange.Credit);
+           // Globals.UserChange.Credit = values.Item2;
             lCredit.Text = Globals.UserChange.Credit.ToString() + "€";
         }
 
