@@ -72,6 +72,8 @@ namespace Kaffeemaschine
             chart1.ChartAreas[0].AxisX.LineWidth = 0;
             chart1.ChartAreas[0].AxisY.LineWidth = 0;
 
+            chart1.ChartAreas[0].AxisX.Title = "seriesArray";
+
             Series FillLevelSeries = new Series();
             FillLevelSeries.IsValueShownAsLabel = true;
             FillLevelSeries.IsVisibleInLegend = true;
@@ -97,8 +99,6 @@ namespace Kaffeemaschine
 
             chart1.Series.Add(FillLevelSeries);
 
-            // Set title
-            this.chart1.Titles.Add("Füllstände");
 
                 // Add series.
                 //Es wird durch das array geloopt und für jeden Ingredient wird ein Datenpunkt in die Serie eingefügt

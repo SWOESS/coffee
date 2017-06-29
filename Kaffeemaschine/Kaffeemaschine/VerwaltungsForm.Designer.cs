@@ -171,6 +171,7 @@
             this.chart1.Location = new System.Drawing.Point(246, 110);
             this.chart1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.chart1.Name = "chart1";
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             this.tableLayoutPanel1.SetRowSpan(this.chart1, 14);
             this.chart1.Size = new System.Drawing.Size(1108, 716);
             this.chart1.TabIndex = 5;
