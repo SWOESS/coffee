@@ -12,7 +12,7 @@ namespace ProduktverwaltungmitLog
         {
             Credit = startingAmount;
         }
-        public double Credit { get; private set; }
+        public double Credit { get; set; }
         
         public void Increase(double amount)
         {

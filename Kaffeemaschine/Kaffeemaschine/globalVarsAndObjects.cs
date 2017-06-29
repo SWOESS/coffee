@@ -35,7 +35,7 @@ namespace ProduktverwaltungmitLog
             }
             else
             {
-                UserCoin = new Coin(0,20,20,20,20);
+                UserCoin = new Coin(20,20,20,20,20);
             }
             listOfIngredients = new List<Ingredient>();
             listOfProducts = new List<Product>();

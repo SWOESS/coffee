@@ -30,7 +30,7 @@ namespace ProduktverwaltungmitLog
         /// <summary>
         /// "macht" eine Einheit des Products, und zieht dabei den Füllstand aller Ingredients ab.
         /// </summary>
-        public void TryMake()
+        public double TryMake(double change)
         {
             try
             {
@@ -43,6 +43,9 @@ namespace ProduktverwaltungmitLog
 
                     }
                 }
+                //deplete Credit
+                change -= this.Price;
+                return change;
             }
             catch (IngredientEmptyException IngEmptyExc)
             {
