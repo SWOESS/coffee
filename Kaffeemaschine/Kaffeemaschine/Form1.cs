@@ -34,7 +34,6 @@ namespace Kaffeemaschine
                 {
                     try
                     {
-                        item.TryMake();
                         bool error = false;
                         error = Globals.UserChange.Deplete(item.Price);
                         if (error)
@@ -42,6 +41,7 @@ namespace Kaffeemaschine
                             MessageBox.Show("Guthaben zu niedrig");
                             return;
                         }
+                        lCredit.Text = Globals.UserChange.Credit.ToString() + "€";
                     }
                     catch (IngredientEmptyException iee)
                     {
@@ -101,7 +101,9 @@ namespace Kaffeemaschine
 
         private void pictureBox14_Click(object sender, EventArgs e)
         {
-            Globals.UserCoin.DisplayCurrentChange(Globals.UserChange.Credit);
+         Tuple<int[], double> values = Globals.UserCoin.DisplayCurrentChange(Globals.UserChange.Credit);
+            Globals.UserChange.Credit = values.Item2;
+            lCredit.Text = Globals.UserChange.Credit.ToString() + "€";
         }
 
         private void pictureBox13_Click(object sender, EventArgs e)
