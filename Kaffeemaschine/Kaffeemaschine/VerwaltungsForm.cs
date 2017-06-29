@@ -63,8 +63,8 @@ namespace Kaffeemaschine
             int[] pointsArray = Globals.getIngredientIndexes();
             double[] fillArray = Globals.getIngredientFill();
             Color[] pointColors = new Color[] { Color.Beige, Color.OrangeRed, Color.RosyBrown, Color.AntiqueWhite, Color.GreenYellow, Color.Ivory};
-            //series.IsValueShownAsLabel = true;
-
+            Series s = new Series();
+            s.IsValueShownAsLabel = true;
             // Liienin in chart ausblenden
             chart1.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
             chart1.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
@@ -75,7 +75,6 @@ namespace Kaffeemaschine
             FillLevelSeries.ChartType = SeriesChartType.Bar;
             FillLevelSeries.ChartArea = "FillChartArea";
 
-            
             int i = 0;
             foreach (var ingre in Globals.listOfIngredients)
             {
@@ -86,9 +85,9 @@ namespace Kaffeemaschine
                     p.YValues = xyz;
                     p.Color = pointColors[i];
                     p.Label = seriesArray[i];
-                    //i ist quasi der Index des Ingredients, die X Achse im Diagramm (immer um eins höher)
-                    //fillArray[i] ist der Y-Wert des Datenpunkts, Der Füllstand der Ingredients. Dies ist die Länge des Balkens.
-                    FillLevelSeries.Points.AddXY(i, fillArray[i]);
+                //i ist quasi der Index des Ingredients, die X Achse im Diagramm (immer um eins höher)
+                //fillArray[i] ist der Y-Wert des Datenpunkts, Der Füllstand der Ingredients. Dies ist die Länge des Balkens.
+                FillLevelSeries.Points.AddXY(i, fillArray[i]);
                 i++;
             }
 
