@@ -131,6 +131,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.chart1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.chart1.BorderlineColor = System.Drawing.Color.Transparent;
+            this.chart1.BorderlineWidth = 3;
             chartArea1.AxisX2.Maximum = 100D;
             chartArea1.AxisX2.Minimum = 0D;
             chartArea1.AxisY2.Maximum = 100D;
