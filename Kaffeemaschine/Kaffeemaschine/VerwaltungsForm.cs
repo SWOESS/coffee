@@ -67,6 +67,7 @@ namespace Kaffeemaschine
             // Liienin in chart ausblenden
             chart1.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
             chart1.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+
             int i = 0;
             foreach (var ingre in Globals.listOfIngredients)
             {
@@ -91,9 +92,10 @@ namespace Kaffeemaschine
                     xyz[0] = fillArray[i]; 
                     p.YValues = xyz;
                     p.Label = seriesArray[i];
-                    //i ist quasi der Index des Ingredients, die X Achse im Diagramm (immer um eins höher)
-                    //fillArray[i] ist der Y-Wert des Datenpunkts, Der Füllstand der Ingredients. Dies ist die Länge des Balkens.
-                    s.Points.AddXY(i, fillArray[i]);
+
+                //i ist quasi der Index des Ingredients, die X Achse im Diagramm (immer um eins höher)
+                //fillArray[i] ist der Y-Wert des Datenpunkts, Der Füllstand der Ingredients. Dies ist die Länge des Balkens.
+                s.Points.AddXY(i, fillArray[i]);
                 i++;
             }
 
@@ -109,3 +111,4 @@ namespace Kaffeemaschine
             }
         }
 }
+
