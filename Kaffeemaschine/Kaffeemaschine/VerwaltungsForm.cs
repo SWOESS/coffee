@@ -69,6 +69,9 @@ namespace Kaffeemaschine
             chart1.ChartAreas[0].AxisX.MajorGrid.LineWidth = 0;
             chart1.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
 
+            chart1.ChartAreas[0].AxisX.LineWidth = 0;
+            chart1.ChartAreas[0].AxisY.LineWidth = 0;
+
             Series FillLevelSeries = new Series();
             FillLevelSeries.IsValueShownAsLabel = true;
             FillLevelSeries.IsVisibleInLegend = true;
