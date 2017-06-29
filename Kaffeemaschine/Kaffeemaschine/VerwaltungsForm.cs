@@ -93,8 +93,6 @@ namespace Kaffeemaschine
 
             chart1.Series.Add(FillLevelSeries);
 
-            //Color change
-            chart1.Palette = ChartColorPalette.Pastel;
             // Set title
             this.chart1.Titles.Add("Füllstände");
 
