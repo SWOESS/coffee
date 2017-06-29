@@ -56,6 +56,11 @@ namespace ProduktverwaltungmitLog
                 l.Error(e.Message);
             }
         }
+        /// <summary>
+        /// Berechnet, welche Münzen aus dem Wechselgeldfach zurückgegeben werden sollen und gibt diese sowie den aktuellen Credit in einer Tuple aus
+        /// </summary>
+        /// <param name="Change"></param>
+        /// <returns></returns>
         public Tuple<int[], double> DisplayCurrentChange(double Change)
         {
             int[] Counter = new int[CoinStock.Length];
