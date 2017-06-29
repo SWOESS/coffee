@@ -30,49 +30,49 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.ChangeFormButton = new System.Windows.Forms.Button();
+            this.ProductPBox01 = new System.Windows.Forms.PictureBox();
+            this.ProductPBox02 = new System.Windows.Forms.PictureBox();
+            this.ProductPBox03 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.ProductPBox04 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.ProductPBox0 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.coin05PBox = new System.Windows.Forms.PictureBox();
+            this.coin02PBox = new System.Windows.Forms.PictureBox();
+            this.coin01PBox = new System.Windows.Forms.PictureBox();
+            this.coin10PBox = new System.Windows.Forms.PictureBox();
+            this.coin20PBox = new System.Windows.Forms.PictureBox();
             this.lCredit = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.PlaceHolder0 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductPBox01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductPBox02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductPBox03)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductPBox04)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductPBox0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin05PBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin02PBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin01PBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin10PBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin20PBox)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -99,31 +99,31 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.Controls.Add(this.button1, 16, 18);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 6, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 11, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox4, 16, 4);
+            this.tableLayoutPanel1.Controls.Add(this.ChangeFormButton, 16, 18);
+            this.tableLayoutPanel1.Controls.Add(this.ProductPBox01, 6, 4);
+            this.tableLayoutPanel1.Controls.Add(this.ProductPBox02, 11, 4);
+            this.tableLayoutPanel1.Controls.Add(this.ProductPBox03, 16, 4);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 6, 9);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox6, 11, 9);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox7, 16, 9);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox8, 1, 14);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox5, 1, 9);
+            this.tableLayoutPanel1.Controls.Add(this.ProductPBox04, 1, 9);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox9, 6, 14);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox10, 11, 14);
             this.tableLayoutPanel1.Controls.Add(this.pictureBox11, 16, 14);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox12, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.ProductPBox0, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label3, 1, 7);
             this.tableLayoutPanel1.Controls.Add(this.label4, 6, 7);
             this.tableLayoutPanel1.Controls.Add(this.label5, 11, 7);
             this.tableLayoutPanel1.Controls.Add(this.label6, 16, 7);
             this.tableLayoutPanel1.Controls.Add(this.label7, 1, 12);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox15, 9, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox13, 7, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox14, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox16, 11, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox17, 13, 0);
+            this.tableLayoutPanel1.Controls.Add(this.coin05PBox, 9, 0);
+            this.tableLayoutPanel1.Controls.Add(this.coin02PBox, 7, 0);
+            this.tableLayoutPanel1.Controls.Add(this.coin01PBox, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.coin10PBox, 11, 0);
+            this.tableLayoutPanel1.Controls.Add(this.coin20PBox, 13, 0);
             this.tableLayoutPanel1.Controls.Add(this.lCredit, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.richTextBox1, 0, 18);
+            this.tableLayoutPanel1.Controls.Add(this.PlaceHolder0, 0, 18);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -155,78 +155,78 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(803, 643);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // button1
+            // ChangeFormButton
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ChangeFormButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.PaleGreen;
-            this.tableLayoutPanel1.SetColumnSpan(this.button1, 4);
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.Location = new System.Drawing.Point(643, 579);
-            this.button1.Name = "button1";
-            this.tableLayoutPanel1.SetRowSpan(this.button1, 2);
-            this.button1.Size = new System.Drawing.Size(157, 61);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Verwaltung";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ChangeFormButton.BackColor = System.Drawing.Color.PaleGreen;
+            this.tableLayoutPanel1.SetColumnSpan(this.ChangeFormButton, 4);
+            this.ChangeFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ChangeFormButton.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChangeFormButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ChangeFormButton.Location = new System.Drawing.Point(643, 579);
+            this.ChangeFormButton.Name = "ChangeFormButton";
+            this.tableLayoutPanel1.SetRowSpan(this.ChangeFormButton, 2);
+            this.ChangeFormButton.Size = new System.Drawing.Size(157, 61);
+            this.ChangeFormButton.TabIndex = 2;
+            this.ChangeFormButton.Text = "Verwaltung";
+            this.ChangeFormButton.UseVisualStyleBackColor = false;
+            this.ChangeFormButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox2
+            // ProductPBox01
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ProductPBox01.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox2, 3);
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(243, 131);
-            this.pictureBox2.Name = "pictureBox2";
-            this.tableLayoutPanel1.SetRowSpan(this.pictureBox2, 3);
-            this.pictureBox2.Size = new System.Drawing.Size(114, 90);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Tag = "Früchtetee";
-            this.pictureBox2.Click += new System.EventHandler(this.ProductIconClicked);
+            this.ProductPBox01.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.ProductPBox01, 3);
+            this.ProductPBox01.Image = ((System.Drawing.Image)(resources.GetObject("ProductPBox01.Image")));
+            this.ProductPBox01.Location = new System.Drawing.Point(243, 131);
+            this.ProductPBox01.Name = "ProductPBox01";
+            this.tableLayoutPanel1.SetRowSpan(this.ProductPBox01, 3);
+            this.ProductPBox01.Size = new System.Drawing.Size(114, 90);
+            this.ProductPBox01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ProductPBox01.TabIndex = 4;
+            this.ProductPBox01.TabStop = false;
+            this.ProductPBox01.Tag = "Früchtetee";
+            this.ProductPBox01.Click += new System.EventHandler(this.ProductIconClicked);
             // 
-            // pictureBox3
+            // ProductPBox02
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ProductPBox02.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox3, 3);
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(443, 131);
-            this.pictureBox3.Name = "pictureBox3";
-            this.tableLayoutPanel1.SetRowSpan(this.pictureBox3, 3);
-            this.pictureBox3.Size = new System.Drawing.Size(114, 90);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Tag = "Kakao";
-            this.pictureBox3.Click += new System.EventHandler(this.ProductIconClicked);
+            this.ProductPBox02.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.ProductPBox02, 3);
+            this.ProductPBox02.Image = ((System.Drawing.Image)(resources.GetObject("ProductPBox02.Image")));
+            this.ProductPBox02.Location = new System.Drawing.Point(443, 131);
+            this.ProductPBox02.Name = "ProductPBox02";
+            this.tableLayoutPanel1.SetRowSpan(this.ProductPBox02, 3);
+            this.ProductPBox02.Size = new System.Drawing.Size(114, 90);
+            this.ProductPBox02.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ProductPBox02.TabIndex = 5;
+            this.ProductPBox02.TabStop = false;
+            this.ProductPBox02.Tag = "Kakao";
+            this.ProductPBox02.Click += new System.EventHandler(this.ProductIconClicked);
             // 
-            // pictureBox4
+            // ProductPBox03
             // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ProductPBox03.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox4, 3);
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(643, 131);
-            this.pictureBox4.Name = "pictureBox4";
-            this.tableLayoutPanel1.SetRowSpan(this.pictureBox4, 3);
-            this.pictureBox4.Size = new System.Drawing.Size(114, 90);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 6;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Tag = "Cappuchino";
-            this.pictureBox4.Click += new System.EventHandler(this.ProductIconClicked);
+            this.ProductPBox03.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.ProductPBox03, 3);
+            this.ProductPBox03.Image = ((System.Drawing.Image)(resources.GetObject("ProductPBox03.Image")));
+            this.ProductPBox03.Location = new System.Drawing.Point(643, 131);
+            this.ProductPBox03.Name = "ProductPBox03";
+            this.tableLayoutPanel1.SetRowSpan(this.ProductPBox03, 3);
+            this.ProductPBox03.Size = new System.Drawing.Size(114, 90);
+            this.ProductPBox03.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ProductPBox03.TabIndex = 6;
+            this.ProductPBox03.TabStop = false;
+            this.ProductPBox03.Tag = "Cappuchino";
+            this.ProductPBox03.Click += new System.EventHandler(this.ProductIconClicked);
             // 
             // pictureBox1
             // 
@@ -284,23 +284,23 @@
             this.pictureBox8.TabIndex = 10;
             this.pictureBox8.TabStop = false;
             // 
-            // pictureBox5
+            // ProductPBox04
             // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ProductPBox04.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox5, 3);
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(43, 291);
-            this.pictureBox5.Name = "pictureBox5";
-            this.tableLayoutPanel1.SetRowSpan(this.pictureBox5, 3);
-            this.pictureBox5.Size = new System.Drawing.Size(114, 90);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 7;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Tag = "Schwarz";
-            this.pictureBox5.Click += new System.EventHandler(this.ProductIconClicked);
+            this.ProductPBox04.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.ProductPBox04, 3);
+            this.ProductPBox04.Image = ((System.Drawing.Image)(resources.GetObject("ProductPBox04.Image")));
+            this.ProductPBox04.Location = new System.Drawing.Point(43, 291);
+            this.ProductPBox04.Name = "ProductPBox04";
+            this.tableLayoutPanel1.SetRowSpan(this.ProductPBox04, 3);
+            this.ProductPBox04.Size = new System.Drawing.Size(114, 90);
+            this.ProductPBox04.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ProductPBox04.TabIndex = 7;
+            this.ProductPBox04.TabStop = false;
+            this.ProductPBox04.Tag = "Schwarz";
+            this.ProductPBox04.Click += new System.EventHandler(this.ProductIconClicked);
             // 
             // pictureBox9
             // 
@@ -344,23 +344,23 @@
             this.pictureBox11.TabIndex = 13;
             this.pictureBox11.TabStop = false;
             // 
-            // pictureBox12
+            // ProductPBox0
             // 
-            this.pictureBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ProductPBox0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox12, 3);
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(43, 131);
-            this.pictureBox12.Name = "pictureBox12";
-            this.tableLayoutPanel1.SetRowSpan(this.pictureBox12, 3);
-            this.pictureBox12.Size = new System.Drawing.Size(114, 90);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 14;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Tag = "Latte";
-            this.pictureBox12.Click += new System.EventHandler(this.ProductIconClicked);
+            this.ProductPBox0.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.ProductPBox0, 3);
+            this.ProductPBox0.Image = ((System.Drawing.Image)(resources.GetObject("ProductPBox0.Image")));
+            this.ProductPBox0.Location = new System.Drawing.Point(43, 131);
+            this.ProductPBox0.Name = "ProductPBox0";
+            this.tableLayoutPanel1.SetRowSpan(this.ProductPBox0, 3);
+            this.ProductPBox0.Size = new System.Drawing.Size(114, 90);
+            this.ProductPBox0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ProductPBox0.TabIndex = 14;
+            this.ProductPBox0.TabStop = false;
+            this.ProductPBox0.Tag = "Latte";
+            this.ProductPBox0.Click += new System.EventHandler(this.ProductIconClicked);
             // 
             // label3
             // 
@@ -437,100 +437,100 @@
             this.label7.Text = "Kaffee Schwarz";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox15
+            // coin05PBox
             // 
-            this.pictureBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.coin05PBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox15, 2);
-            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(360, 0);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox15.Name = "pictureBox15";
-            this.tableLayoutPanel1.SetRowSpan(this.pictureBox15, 2);
-            this.pictureBox15.Size = new System.Drawing.Size(80, 64);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 23;
-            this.pictureBox15.TabStop = false;
-            this.pictureBox15.Tag = "0,5";
-            this.pictureBox15.Click += new System.EventHandler(this.pictureBox14_Click);
+            this.coin05PBox.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.coin05PBox, 2);
+            this.coin05PBox.Image = ((System.Drawing.Image)(resources.GetObject("coin05PBox.Image")));
+            this.coin05PBox.Location = new System.Drawing.Point(360, 0);
+            this.coin05PBox.Margin = new System.Windows.Forms.Padding(0);
+            this.coin05PBox.Name = "coin05PBox";
+            this.tableLayoutPanel1.SetRowSpan(this.coin05PBox, 2);
+            this.coin05PBox.Size = new System.Drawing.Size(80, 64);
+            this.coin05PBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.coin05PBox.TabIndex = 23;
+            this.coin05PBox.TabStop = false;
+            this.coin05PBox.Tag = "0,5";
+            this.coin05PBox.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
-            // pictureBox13
+            // coin02PBox
             // 
-            this.pictureBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.coin02PBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox13, 2);
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(280, 0);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox13.Name = "pictureBox13";
-            this.tableLayoutPanel1.SetRowSpan(this.pictureBox13, 2);
-            this.pictureBox13.Size = new System.Drawing.Size(80, 64);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 22;
-            this.pictureBox13.TabStop = false;
-            this.pictureBox13.Tag = "0,2";
-            this.pictureBox13.Click += new System.EventHandler(this.pictureBox14_Click);
+            this.coin02PBox.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.coin02PBox, 2);
+            this.coin02PBox.Image = ((System.Drawing.Image)(resources.GetObject("coin02PBox.Image")));
+            this.coin02PBox.Location = new System.Drawing.Point(280, 0);
+            this.coin02PBox.Margin = new System.Windows.Forms.Padding(0);
+            this.coin02PBox.Name = "coin02PBox";
+            this.tableLayoutPanel1.SetRowSpan(this.coin02PBox, 2);
+            this.coin02PBox.Size = new System.Drawing.Size(80, 64);
+            this.coin02PBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.coin02PBox.TabIndex = 22;
+            this.coin02PBox.TabStop = false;
+            this.coin02PBox.Tag = "0,2";
+            this.coin02PBox.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
-            // pictureBox14
+            // coin01PBox
             // 
-            this.pictureBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.coin01PBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox14, 2);
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(200, 0);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox14.Name = "pictureBox14";
-            this.tableLayoutPanel1.SetRowSpan(this.pictureBox14, 2);
-            this.pictureBox14.Size = new System.Drawing.Size(80, 64);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 21;
-            this.pictureBox14.TabStop = false;
-            this.pictureBox14.Tag = "0,1";
-            this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
+            this.coin01PBox.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.coin01PBox, 2);
+            this.coin01PBox.Image = ((System.Drawing.Image)(resources.GetObject("coin01PBox.Image")));
+            this.coin01PBox.Location = new System.Drawing.Point(200, 0);
+            this.coin01PBox.Margin = new System.Windows.Forms.Padding(0);
+            this.coin01PBox.Name = "coin01PBox";
+            this.tableLayoutPanel1.SetRowSpan(this.coin01PBox, 2);
+            this.coin01PBox.Size = new System.Drawing.Size(80, 64);
+            this.coin01PBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.coin01PBox.TabIndex = 21;
+            this.coin01PBox.TabStop = false;
+            this.coin01PBox.Tag = "0,1";
+            this.coin01PBox.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
-            // pictureBox16
+            // coin10PBox
             // 
-            this.pictureBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.coin10PBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox16, 2);
-            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
-            this.pictureBox16.Location = new System.Drawing.Point(440, 0);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox16.Name = "pictureBox16";
-            this.tableLayoutPanel1.SetRowSpan(this.pictureBox16, 2);
-            this.pictureBox16.Size = new System.Drawing.Size(80, 64);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 24;
-            this.pictureBox16.TabStop = false;
-            this.pictureBox16.Tag = "1,0";
-            this.pictureBox16.Click += new System.EventHandler(this.pictureBox14_Click);
+            this.coin10PBox.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.coin10PBox, 2);
+            this.coin10PBox.Image = ((System.Drawing.Image)(resources.GetObject("coin10PBox.Image")));
+            this.coin10PBox.Location = new System.Drawing.Point(440, 0);
+            this.coin10PBox.Margin = new System.Windows.Forms.Padding(0);
+            this.coin10PBox.Name = "coin10PBox";
+            this.tableLayoutPanel1.SetRowSpan(this.coin10PBox, 2);
+            this.coin10PBox.Size = new System.Drawing.Size(80, 64);
+            this.coin10PBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.coin10PBox.TabIndex = 24;
+            this.coin10PBox.TabStop = false;
+            this.coin10PBox.Tag = "1,0";
+            this.coin10PBox.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
-            // pictureBox17
+            // coin20PBox
             // 
-            this.pictureBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.coin20PBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox17.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox17, 2);
-            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(520, 0);
-            this.pictureBox17.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox17.Name = "pictureBox17";
-            this.tableLayoutPanel1.SetRowSpan(this.pictureBox17, 2);
-            this.pictureBox17.Size = new System.Drawing.Size(80, 64);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox17.TabIndex = 25;
-            this.pictureBox17.TabStop = false;
-            this.pictureBox17.Tag = "2,0";
-            this.pictureBox17.Click += new System.EventHandler(this.pictureBox14_Click);
+            this.coin20PBox.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.coin20PBox, 2);
+            this.coin20PBox.Image = ((System.Drawing.Image)(resources.GetObject("coin20PBox.Image")));
+            this.coin20PBox.Location = new System.Drawing.Point(520, 0);
+            this.coin20PBox.Margin = new System.Windows.Forms.Padding(0);
+            this.coin20PBox.Name = "coin20PBox";
+            this.tableLayoutPanel1.SetRowSpan(this.coin20PBox, 2);
+            this.coin20PBox.Size = new System.Drawing.Size(80, 64);
+            this.coin20PBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.coin20PBox.TabIndex = 25;
+            this.coin20PBox.TabStop = false;
+            this.coin20PBox.Tag = "2,0";
+            this.coin20PBox.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
             // lCredit
             // 
@@ -548,20 +548,24 @@
             this.lCredit.TabIndex = 20;
             this.lCredit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // richTextBox1
+            // PlaceHolder0
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.PlaceHolder0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableLayoutPanel1.SetColumnSpan(this.richTextBox1, 16);
-            this.richTextBox1.Location = new System.Drawing.Point(3, 579);
-            this.richTextBox1.Name = "richTextBox1";
-            this.tableLayoutPanel1.SetRowSpan(this.richTextBox1, 2);
-            this.richTextBox1.Size = new System.Drawing.Size(634, 61);
-            this.richTextBox1.TabIndex = 26;
-            this.richTextBox1.Text = "";
+            this.PlaceHolder0.AutoSize = true;
+            this.PlaceHolder0.BackColor = System.Drawing.Color.DarkGray;
+            this.tableLayoutPanel1.SetColumnSpan(this.PlaceHolder0, 16);
+            this.PlaceHolder0.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlaceHolder0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PlaceHolder0.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.PlaceHolder0.Location = new System.Drawing.Point(3, 576);
+            this.PlaceHolder0.Name = "PlaceHolder0";
+            this.tableLayoutPanel1.SetRowSpan(this.PlaceHolder0, 2);
+            this.PlaceHolder0.Size = new System.Drawing.Size(634, 67);
+            this.PlaceHolder0.TabIndex = 26;
+            this.PlaceHolder0.Text = "Münzverwaltung";
+            this.PlaceHolder0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -576,23 +580,23 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductPBox01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductPBox02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductPBox03)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductPBox04)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductPBox0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin05PBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin02PBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin01PBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin10PBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coin20PBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -600,31 +604,31 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button ChangeFormButton;
+        private System.Windows.Forms.PictureBox ProductPBox01;
+        private System.Windows.Forms.PictureBox ProductPBox02;
+        private System.Windows.Forms.PictureBox ProductPBox03;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox ProductPBox04;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox ProductPBox0;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lCredit;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.PictureBox coin01PBox;
+        private System.Windows.Forms.PictureBox coin02PBox;
+        private System.Windows.Forms.PictureBox coin05PBox;
+        private System.Windows.Forms.PictureBox coin10PBox;
+        private System.Windows.Forms.PictureBox coin20PBox;
+        private System.Windows.Forms.Label PlaceHolder0;
     }
 }
 
