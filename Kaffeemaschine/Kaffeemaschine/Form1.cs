@@ -98,5 +98,25 @@ namespace Kaffeemaschine
             t.Stop();
             this.FormBorderStyle = FormBorderStyle.Sizable;
         }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
