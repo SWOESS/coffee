@@ -56,7 +56,7 @@ namespace ProduktverwaltungmitLog
                 l.Error(e.Message);
             }
         }
-        public int[] DisplayCurrentChange(double Change)
+        public Tuple<int[], double> DisplayCurrentChange(double Change)
         {
             int[] Counter = new int[CoinStock.Length];
             for (int i = 0; i < Counter.Length; i++)
@@ -82,10 +82,10 @@ namespace ProduktverwaltungmitLog
                     Counter[c]++;
                     c++;
                 }
-              
+                
             }
-            //TODO: cache object of current Change Values
-            return Counter;
+            Tuple<int[], double> values = new Tuple<int[], double>(Counter, Change);
+            return values;
         }
 
     }
