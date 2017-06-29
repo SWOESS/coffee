@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Drawing;
 
 namespace ProduktverwaltungmitLog
 {
-     public class Coin
+    public class Coin
     {
         public Coin()
         {
@@ -22,7 +17,6 @@ namespace ProduktverwaltungmitLog
             Coin05Stock = c05c;
             Coin1Stock = c1c;
             Coin2Stock = c2c;
-
             CoinStock = new int[] { Coin01Stock, Coin02Stock, Coin05Stock, Coin1Stock, Coin2Stock };
         }
         public int Coin01Stock { get; set; }
@@ -61,6 +55,37 @@ namespace ProduktverwaltungmitLog
                 Logger l = new Logger("ChangeIO");
                 l.Error(e.Message);
             }
+        }
+        public int[] DisplayCurrentChange(double Change)
+        {
+            int[] Counter = new int[CoinStock.Length];
+            for (int i = 0; i < Counter.Length; i++)
+            {
+                Counter[i] = 0;
+            }
+            int c = 0;
+
+            foreach (int Coin in CoinStock)
+            {
+                if (Coin < 5 && Coin > 0)
+                {
+                    Logger l = new Logger("Wechselgeld");
+                    l.Information("Wechselgeld fast leer: " + CoinStock[c].ToString());
+                }
+                else if (Coin <= 0)
+                {
+                    throw new Exception("Change at " + CoinStock[c].ToString() + " empty!");
+                }
+                while (Change- Coin >= 0)
+                {
+                    Change -= Coin;
+                    Counter[c]++;
+                    c++;
+                }
+              
+            }
+            //TODO: cache object of current Change Values
+            return Counter;
         }
 
     }

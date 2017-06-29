@@ -101,7 +101,7 @@ namespace Kaffeemaschine
 
         private void pictureBox14_Click(object sender, EventArgs e)
         {
-
+            Globals.UserCoin.DisplayCurrentChange(Globals.UserChange.Credit);
         }
 
         private void pictureBox13_Click(object sender, EventArgs e)

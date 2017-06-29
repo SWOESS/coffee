@@ -72,7 +72,7 @@ namespace Kaffeemaschine
             Series FillLevelSeries = new Series();
             FillLevelSeries.IsValueShownAsLabel = true;
             FillLevelSeries.IsVisibleInLegend = true;
-            FillLevelSeries.ChartType = SeriesChartType.Bar;
+            FillLevelSeries.ChartType = SeriesChartType.Column;
             FillLevelSeries.ChartArea = "FillChartArea";
 
             int i = 0;
@@ -81,7 +81,8 @@ namespace Kaffeemaschine
                     DataPoint p = new DataPoint();
                     p.XValue = i;
                     double[] xyz = new double[1];
-                    xyz[0] = fillArray[i]; 
+                    xyz[0] = fillArray[i];
+                    p.LegendText = ingre.Name;
                     p.YValues = xyz;
                     p.Color = pointColors[i];
                     p.Label = seriesArray[i];

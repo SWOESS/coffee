@@ -27,12 +27,12 @@ namespace ProduktverwaltungmitLog
         {
             if (this.Credit < amount)
             {
-                return false;
+                return true;
             }
             else
             {
                 this.Credit -= amount;
-                return true;
+                return false;
             }
         }
     }
