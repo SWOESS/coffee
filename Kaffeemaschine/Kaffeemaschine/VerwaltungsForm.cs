@@ -72,16 +72,12 @@ namespace Kaffeemaschine
             chart1.ChartAreas[0].AxisX.LineWidth = 0;
             chart1.ChartAreas[0].AxisY.LineWidth = 0;
 
-            var legend = new Legend();
-            legend.LegendStyle = LegendStyle.Row;
-            legend.Docking = Docking.Left;
-            legend.DockedToChartArea = "test";
-            legend.IsDockedInsideChartArea = true;
+            
 
             Series FillLevelSeries = new Series();
             FillLevelSeries.IsValueShownAsLabel = true;
             FillLevelSeries.IsVisibleInLegend = true;
-            FillLevelSeries.ChartType = SeriesChartType.Bar;
+            FillLevelSeries.ChartType = SeriesChartType.Column;
             FillLevelSeries.ChartArea = "FillChartArea";
 
             int i = 0;
@@ -100,6 +96,12 @@ namespace Kaffeemaschine
                 //i ist quasi der Index des Ingredients, die X Achse im Diagramm (immer um eins höher)
                 //fillArray[i] ist der Y-Wert des Datenpunkts, Der Füllstand der Ingredients. Dies ist die Länge des Balkens.
                 FillLevelSeries.Points.AddXY(i, fillArray[i]);
+                var legend = new Legend();
+                legend.LegendStyle = LegendStyle.Column;
+                legend.Docking = Docking.Bottom;
+                legend.DockedToChartArea = "test";
+                legend.IsDockedInsideChartArea = true;
+
                 i++;
             }
 
