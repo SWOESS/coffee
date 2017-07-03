@@ -22,9 +22,10 @@ namespace Kaffeemaschine
         {
             bSLG = showLoadingGif;
             InitializeComponent();
-            Globals.Init();
-            lCredit.Text = Globals.UserChange.Credit.ToString() + "€";
+            //Globals.Init();
             Globals = Gl;
+            lCredit.Text = Globals.UserChange.Credit.ToString() + "€";
+            
         }
         public Form1(bool sl)
         {
@@ -73,11 +74,11 @@ namespace Kaffeemaschine
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            foreach (Form f in Application.OpenForms)
-            {
-                if (f.Name != this.Name)
-                    f.Close();
-            }
+           // foreach (Form f in Application.OpenForms)
+            //{
+              //  if (f.Name != this.Name)
+                //    f.Close();
+            //}
         }
         //adds a picturebox to the form and initializes a timer to hide the gif after x time and show the panel
         private void Form1_Load(object sender, EventArgs e)
@@ -116,20 +117,6 @@ namespace Kaffeemaschine
            // Globals.UserChange.Credit = values.Item2;
             lCredit.Text = Globals.UserChange.Credit.ToString() + "€";
         }
-
-        private void pictureBox13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox16_Click(object sender, EventArgs e)
-        {
-
-        }
-    }
 }
+    }
+
