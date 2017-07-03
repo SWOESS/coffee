@@ -135,7 +135,6 @@
             this.chart1.BorderlineColor = System.Drawing.Color.Transparent;
             this.chart1.BorderlineWidth = 3;
             chartArea1.AxisX.InterlacedColor = System.Drawing.Color.Transparent;
-            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Transparent;
             chartArea1.AxisX.LineColor = System.Drawing.Color.Transparent;
             chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.Transparent;
             chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Transparent;
